@@ -1,5 +1,5 @@
 var biomes = {
-    {name:"Forest", resources: {wood, plants}} 
+    {name:"Forest", resources:{"wood", "plants"}} 
 }
     
     
