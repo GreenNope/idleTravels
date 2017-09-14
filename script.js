@@ -7,8 +7,13 @@ document.getElementById("biome").innerHTML = currentBiome.name
 
 function tick() {
     distance = distance + speed
-    speed = speed + speed * speedboost
+    speed = speed * speedboost
     document.getElementById("speed").innerHTML = speed
     document.getElementById("biomeDist").innerHTML = biomeDist - speed
+}
+
+while true do {
+    tick()
+    wait(0.1)
 }
     
