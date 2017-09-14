@@ -1,7 +1,7 @@
 const biomes = {
     "forest":{
-        "name":"Forest"
-        "materials":[
+        name:"Forest",
+        materials: [
             "wood","leaves"
         ]
     }
