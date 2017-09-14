@@ -1,5 +1,9 @@
-var biomes = {
-    name:"Forest", resources:["wood", "plants"]
+const biomes = {
+    "forest":{
+        "materials":[
+            "wood","leaves"
+        ]
+    }
 }
     
     
