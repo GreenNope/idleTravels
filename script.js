@@ -9,5 +9,6 @@ function tick() {
     distance = distance + speed
     speed = speed + speed * speedboost
     document.getElementById("speed").innerHTML = speed
+    document.getElementById("biomeDist").innerHTML = biomeDist - speed
 }
     
