@@ -12,4 +12,4 @@ function tick() {
     document.getElementById("biomeDist").innerHTML = biomeDist - speed
 }
 
-setInterval(tick, 1000)
+setInterval(tick, 1000);
