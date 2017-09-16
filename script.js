@@ -12,9 +12,11 @@ function tick() {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
     } else {
-        var totalChance = 0
         for (var mat in currentBiome.materials) {
-            totalChance += mat.chance
+            var rand = Math.floor(Math.random() * 101)
+            if rand <= mat.chance {
+                console.log(mat.name)
+            }
         }
     }
     document.getElementById("speed").innerHTML = speed
