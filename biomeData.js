@@ -1,8 +1,9 @@
 const biomes = {
-    "forest":{
+    forest:{
         name:"Forest",
+        chance: 50,
         materials: [
-            "wood","leaves"
+            {name: "wood", chance: 50}, {name:"leaves", chance: 50}
         ]
     }
 }
