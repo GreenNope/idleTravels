@@ -1,5 +1,5 @@
 const biomes = {
-    forest:{
+    1:{
         name:"Forest",
         chance: 50,
         materials: [
