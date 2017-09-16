@@ -6,7 +6,9 @@ var speedboost = 0.01
 var distance = 0
 var walking = false
 document.getElementById("biome").innerHTML = currentBiome.name
-
+function toggleWalking() {
+    walking != walking
+}
 function tick() {
     if (walking = true) {
         distance = distance + speed
