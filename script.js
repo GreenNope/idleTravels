@@ -8,13 +8,13 @@ var walking = true
 document.getElementById("biome").innerHTML = currentBiome.name
 
 function tick() {
-    if walking = true {
+    if (walking = true) {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
     } else {
         for (var mat in currentBiome.materials) {
             var rand = Math.floor(Math.random() * 101)
-            if rand <= mat.chance {
+            if (rand <= mat.chance) {
                 console.log(mat.name)
             }
         }
