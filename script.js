@@ -13,6 +13,7 @@ function tick() {
     if (walking = true) {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
+        console.log("Walking")
     } else {
         for (var mat in currentBiome.materials) {
             var rand = Math.floor(Math.random() * 101)
@@ -20,6 +21,7 @@ function tick() {
                 console.log(mat.name)
             }
         }
+        console.log("Not Walking")
     }
     document.getElementById("speed").innerHTML = speed
     biomeDist = biomeDist - distance
