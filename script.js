@@ -10,6 +10,7 @@ document.getElementById("biome").innerHTML = currentBiome.name
 function toggleWalking() {
     walking = !walking;
     console.log("Toggled Walking")
+    console.log(walking)
 }
 
 function tick() {
