@@ -8,7 +8,7 @@ var walking = false
 document.getElementById("biome").innerHTML = currentBiome.name
 
 function toggleWalking() {
-    walking = !walking
+    walking = !walking;
     console.log("Toggled Walking")
 }
 
