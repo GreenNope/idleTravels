@@ -8,12 +8,14 @@ var walking = false
 document.getElementById("biome").innerHTML = currentBiome.name
 
 function toggleWalking() {
-    walking = false;
+    walking = !walking;
     console.log("Toggled Walking")
     console.log(walking)
+    return walking
 }
 
 function tick() {
+    
     if (walking = true) {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
