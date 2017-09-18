@@ -7,12 +7,6 @@ var distance = 0
 var walking = false
 document.getElementById("biome").innerHTML = currentBiome.name
 
-function toggleWalking() {
-    walking = !walking;
-    console.log("Toggled Walking")
-    console.log(walking)
-    return walking
-}
 
 function tick() {
     
