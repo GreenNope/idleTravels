@@ -17,7 +17,7 @@ function tick() {
     } else {
         console.log("Not Walking")
         for (i = 0; i < currentBiome.materials.length; i++) {
-            console.log(materials[i].name)
+            console.log(currentBiome.materials[i].name)
         }
     }
     document.getElementById("speed").innerHTML = speed
