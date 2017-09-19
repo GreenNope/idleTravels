@@ -10,7 +10,7 @@ document.getElementById("biome").innerHTML = currentBiome.name
 
 function tick() {
     
-    if (walking = true) {
+    if (walking == true) {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
         console.log("Walking")
