@@ -14,14 +14,18 @@ function tick() {
         distance = distance + speed
         speed = (Math.floor((speed + speed * speedboost) * 100))/100
         console.log("Walking")
+        biomeDist = biomeDist - distance
     } else {
         console.log("Not Walking")
         for (i = 0; i < currentBiome.materials.length; i++) {
-            console.log(currentBiome.materials[i].name)
+            var currentMaterial = currentBiome.materials[i]
+            var materialRandomizer = Math.random() * 100
+            if (materialRandomizer > currentMaterial.chance) {
+                console.log(currentMaterial.name)
+            }
         }
     }
     document.getElementById("speed").innerHTML = speed
-    biomeDist = biomeDist - distance
     document.getElementById("biomeDist").innerHTML = biomeDist
 }
 
