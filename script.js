@@ -5,6 +5,7 @@ var currentBiome = biomes.forest
 var speedBoost = 0.01
 var distance = 0
 var walking = false
+var inventory = {{id: 0, name: "None", count: 1}}
 document.getElementById("biome").innerHTML = currentBiome.name
 
 
