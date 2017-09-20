@@ -24,8 +24,8 @@ function tick() {
             }
         }
     }
-    document.getElementById("speed").innerHTML = speed
-    document.getElementById("biomeDist").innerHTML = biomeDist - distance
+    document.getElementById("speed").innerHTML = Math.round(speed)
+    document.getElementById("biomeDist").innerHTML = Math.round(biomeDist - distance)
 }
 
 window.setInterval(tick, 1000) 
