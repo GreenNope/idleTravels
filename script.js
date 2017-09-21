@@ -17,13 +17,6 @@ function tick() {
         console.log("Walking")
     } else {
         console.log("Not Walking")
-        for (i = 0; i < currentBiome.materials.length; i++) {
-            var currentMaterial = currentBiome.materials[i]
-            var materialRandomizer = Math.random() * 100
-            if (materialRandomizer > currentMaterial.chance) {
-                console.log(currentMaterial.name)
-            }
-        }
     }
     document.getElementById("speed").innerHTML = Math.round(speed)
     document.getElementById("biomeDist").innerHTML = Math.round(biomeDist - distance)
