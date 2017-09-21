@@ -15,11 +15,12 @@ function tick() {
         distance = distance + speed
         speed = speed * (1 + speedBoost)
         console.log("Walking")
-    } else {
-        console.log("Not Walking")
     }
     document.getElementById("speed").innerHTML = Math.round(speed)
     document.getElementById("biomeDist").innerHTML = Math.round(biomeDist - distance)
+    if (biomeDist - distance <= 0) {
+        
+    }
 }
 
 window.setInterval(tick, 1000) 
